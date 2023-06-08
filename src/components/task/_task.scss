@@ -2,11 +2,12 @@
 
 .tasks {
 	border-bottom: 1px solid $light-grey;
-	padding: 15px;
+	padding-bottom: 15px;
 
 	.task {
 		align-items: center;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-bottom: 10px;
 		width: 100%;
@@ -40,6 +41,20 @@
 					border-color: red;
 					color: red;
 				}
+			}
+		}
+	}
+}
+@media screen and (max-width:767px) {
+	.tasks {
+		padding-bottom: 0;
+
+		.task {
+			flex-direction: column;
+			margin-bottom: 15px;
+
+			.desc {
+				margin-bottom: 5px;
 			}
 		}
 	}
