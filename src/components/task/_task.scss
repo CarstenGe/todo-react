@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+.tasks {
+	border-bottom: 1px solid $light-grey;
+	padding: 15px;
+
+	.task {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		width: 100%;
+
+		.completed {
+			color: grey;
+			text-decoration: line-through;
+		}
+		button {
+			background-color: white;
+			border: 1px solid $grey;
+			border-radius: 5px;
+			color: $grey;
+			cursor: pointer;
+			padding: 5px;
+
+			&.toggle-action {
+				&:active,
+				&:focus,
+				&:hover {
+					background-color: $grey;
+					color: white;
+				}
+			}
+			&.delete-button {
+				margin-left: 10px;
+
+				&:active,
+				&:focus,
+				&:hover {
+					border-color: red;
+					color: red;
+				}
+			}
+		}
+	}
+}

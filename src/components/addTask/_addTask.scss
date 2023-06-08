@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.add-task {
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+
+	input {
+		background-color: white;
+		border: 1px solid $grey;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		color: $grey;
+		padding: 5px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	button {
+		background-color: $grey;
+		border: 1px solid $grey;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		color: white;
+		cursor: pointer;
+		padding: 5px;
+	}
+}

@@ -1,0 +1,21 @@
+@import './styles/variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .task-container {
+    background-color: $beige;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 25px;
+    width: 750px;
+  }
+}
